@@ -1,0 +1,8 @@
+// Main SCSS entry file for the interface.
+@import 'govuk-frontend/dist/govuk';
+
+// ------------------------------
+// Component imports
+// ------------------------------
+@import 'components/layout';
+@import 'components/tables';

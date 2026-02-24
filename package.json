@@ -1,11 +1,12 @@
 {
     "scripts": {
         "lint": "eslint frontend",
-        "build:css": "sass frontend/scss/main.scss frontend/style.css --no-source-map --style=compressed",
-        "watch:css": "sass --watch frontend/scss/main.scss:frontend/style.css --no-source-map"
+        "build:css": "sass --load-path=node_modules frontend/styles/main.scss frontend/styles/style.css --no-source-map --style=compressed",
+        "watch:css": "sass --load-path=node_modules --watch frontend/styles/main.scss:frontend/styles/style.css --no-source-map"
     },
     "dependencies": {
         "@airtable/blocks": "interface-alpha",
+        "govuk-frontend": "^6.0.0",
         "react": "^19.1.0",
         "react-dom": "^19.1.0"
     },
